@@ -378,7 +378,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: rgba(4, 12, 21, 0.8);
+  background-color: rgba(237, 80, 46, 0.1);
   overflow: hidden;
   position: relative;
 }
@@ -402,7 +402,7 @@ h6 {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(4, 12, 21, 0.5);
+  background-color: rgba(237, 80, 46, 0.1);
 }
 
 #hero .carousel-container {
@@ -981,17 +981,17 @@ section {
 --------------------------------------------------------------*/
 .cta {
   padding: 80px 0;
-  background: #91C8E4;
+  background: #0b2341;
 }
 
 .cta h3 {
-  color: #000;
+  color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #000;
+  color: #ffffff;
 }
 
 .cta .cta-btn {
@@ -1005,7 +1005,7 @@ section {
   transition: 0.5s;
   margin-top: 10px;
   border: 2px solid #ed502e;
-  color: #000;
+  color: #fff;
 }
 
 .cta .cta-btn:hover {
@@ -1171,76 +1171,66 @@ section {
 .abs_sub .sidenav p {
   padding: 0;
 }
+/*--------------------------------------------------------------
+# common styles for committee members
+--------------------------------------------------------------*/
+.member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.member .member-info {
+  padding: 10px 0;
+}
+
+.member .member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #0f2f57;
+}
+
+.member:hover .member-info {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(246, 249, 253, 1) 20%, rgba(237, 80, 46, 1) 100%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.member:hover .member-info-content {
+  bottom: 30px;
+  transition: bottom 0.4s;
+}
+
 
 /*--------------------------------------------------------------
-# organising committee
+# Chief Patron specific styles
+--------------------------------------------------------------*/
+.chief-patron .member {
+  width: 300px; /* Set width as needed */
+}
+/*--------------------------------------------------------------
+# Patron specific styles
+--------------------------------------------------------------*/
+.patron .member {
+  width: 300px; /* Set width as needed */
+}
+/*--------------------------------------------------------------
+# Organising Committee specific styles
 --------------------------------------------------------------*/
 .ogc .member {
-  text-align: center;
-  margin-bottom: 20px;
-  background: white;
-  position: relative;
-  overflow: hidden;
+  width: 300px; /* Set width as needed */
 }
 
-.ogc .member .member-info {
-  padding: 10px 0;
-}
-
-.ogc .member .member-info-content h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  color: #0f2f57;
-}
-
-.ogc .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(11, 35, 65, 0.9) 0%, rgba(11, 35, 65, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
-  opacity: 1;
-  transition: 0.4s;
-}
-
-.ogc .member:hover .member-info-content {
-  bottom: 30px;
-  transition: bottom 0.4s;
-}
-
-.ogc .member:hover .social {
-  left: 0;
-  transition: left ease-in-out 0.3s;
-}
 /*--------------------------------------------------------------
-# tpc
+# TPC specific styles
 --------------------------------------------------------------*/
 .tpc .member {
-  text-align: center;
-  margin-bottom: 20px;
-  background: white;
-  position: relative;
-  overflow: hidden;
+  width: 300px; /* Set width as needed */
 }
 
-.tpc .member .member-info {
-  padding: 10px 0;
-}
-
-.tpc .member .member-info-content h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  color: #0f2f57;
-}
-
-.tpc .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(11, 35, 65, 0.9) 0%, rgba(11, 35, 65, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
-  opacity: 1;
-  transition: 0.4s;
-}
-
-.tpc .member:hover .member-info-content {
-  bottom: 30px;
-  transition: bottom 0.4s;
-}
 
 
 /* timeline */
@@ -1248,7 +1238,21 @@ section {
   padding: 0;
 }
 
+#schedule h2{
+  font-size: 15px;
+}
 
+#schedule c1{
+  width: 20px;
+}
+
+#schedule c1{
+  width: 10px;
+}
+
+#schedule h1{
+  font-size: 20px;
+}
 .cd-container {
   width: 90%;
   max-width: 1080px;
@@ -1312,7 +1316,7 @@ section {
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-block {
-    margin: 4em 0;
+    margin: 0.5em 0;
   }
 
   .cd-timeline-block:first-child {
@@ -1461,7 +1465,7 @@ section {
   .cd-timeline-content {
     color: white;
     margin-left: 0;
-    padding: 1.6em;
+    /* padding: 1.6em; */
     width: 36%;
     margin: 0 10%;
   }
@@ -1867,6 +1871,10 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.map {
+  width: fit-content;
 }
 
 /*--------------------------------------------------------------
